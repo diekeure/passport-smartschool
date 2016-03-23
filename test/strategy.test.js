@@ -1,10 +1,7 @@
-/* global describe, it, expect, before */
+/* global describe, it, expect */
 /* jshint expr: true */
 
-var chai = require('chai')
-  , SmartschoolStrategy = require('../lib/strategy');
-
-
+var SmartschoolStrategy = require('../lib/strategy');
 describe('Strategy', function() {
     
   describe('constructed', function() {
@@ -17,13 +14,14 @@ describe('Strategy', function() {
     it('should be named smartschool', function() {
       expect(strategy.name).to.equal('smartschool');
     });
-  })
+  });
   
   describe('constructed with undefined options', function() {
     it('should throw', function() {
       expect(function() {
-        var strategy = new SmartschoolStrategy(undefined, function(){});
+        /*jshint nonew: false */
+        new SmartschoolStrategy(undefined, function(){});
       }).to.throw(Error);
     });
-  })
+  });
 });
