@@ -40,10 +40,6 @@ describe('Strategy#userProfile', function() {
       expect(profile.platform).to.equal('https:\/\/platform1.smartschool.be');
     });
     
-    it('should set raw property', function() {
-      expect(profile._raw).to.be.a('string');
-    });
-    
     it('should set json property', function() {
       expect(profile._json).to.be.an('object');
     });
