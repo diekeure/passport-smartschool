@@ -35,8 +35,8 @@ describe('Strategy#userProfile', function() {
       expect(profile.id).to.equal('lalalala');
       expect(profile.username).to.equal('diekeure');
       expect(profile.displayName).to.equal('Die Keure Uitgeverij');
-      expect(profile.name.familyName).to.equal('Uitgeverij');
-      expect(profile.name.givenName).to.equal('Die Keure');
+      expect(profile.name.familyName).to.equal('Die Keure');
+      expect(profile.name.givenName).to.equal('Uitgeverij');
       expect(profile.platform).to.equal('https:\/\/platform1.smartschool.be');
     });
     
