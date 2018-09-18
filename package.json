@@ -1,6 +1,6 @@
 {
   "name": "@diekeure/passport-smartschool",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Smartschool authentication strategy for Passport.",
   "keywords": [
     "passport",
